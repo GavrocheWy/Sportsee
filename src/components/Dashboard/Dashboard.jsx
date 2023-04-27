@@ -1,6 +1,13 @@
+// Components
+import DashboardHeader from '../Dashboard/DashboardHeader'
+import DashboardContent from './DashboardContent'
+
 const Dashboard = () => {
     return (
-        <h1>Dashboard</h1>
+        <main>
+            <DashboardHeader />
+            <DashboardContent />
+        </main>
     )
 }
 

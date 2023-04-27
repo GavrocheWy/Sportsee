@@ -6,10 +6,10 @@ import Dashboard from '../components/Dashboard/Dashboard'
 
 const HomePage = () => {
     return (
-        <main>
-            <VerticalNav/>
+        <div>
+            <VerticalNav />
             <Dashboard />
-        </main>
+        </div>
     )
 }
 
