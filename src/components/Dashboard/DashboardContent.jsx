@@ -8,6 +8,11 @@ import UserScoreChart from '../Charts/UserScoreChart'
 import { useContext } from 'react'
 import React from 'react'
 import UserContext from '../../context/UserContext'
+// Assets
+import CaloriesIcon from '../../assets/icons/icon-calories.svg'
+import CarbsIcon from '../../assets/icons/icon-carbs.svg'
+import LipidsIcon from '../../assets/icons/icon-lipids.svg'
+import ProteinsIcon from '../../assets/icons/icon-proteins.svg'
 
 const DashboardContent = () => {
 
@@ -16,13 +21,13 @@ const DashboardContent = () => {
     console.log(user)
 
     return (
-        <section>
+        <section className='dashboard-content'>
 
             {user &&
 
                 <React.Fragment>
 
-                    <div>
+                    <div className='dashboard-charts'>
                         <UserActivityChart dataSource={user.activity.sessions} />
                         <UserAverageSessionChart dataSource={user.averageSession.sessions} />
                         <UserPerformanceChart dataSource={user.performance.data} />
@@ -30,11 +35,11 @@ const DashboardContent = () => {
                     </div>
 
                     {user?.infos?.keyData &&
-                        <aside>
-                            <NutritionalCard text={`${user.infos.keyData.calorieCount}kcal`} subText={'Calories'} />
-                            <NutritionalCard text={`${user.infos.keyData.proteinCount}g`} subText={'Proteines'} />
-                            <NutritionalCard text={`${user.infos.keyData.carbohydrateCount}g`} subText={'Glucides'} />
-                            <NutritionalCard text={`${user.infos.keyData.lipidCount}g`} subText={'Lipides'} />
+                        <aside className='nutritional-cards'>
+                            <NutritionalCard icon={CaloriesIcon} text={`${user.infos.keyData.calorieCount}kCal`} subText={'Calories'} />
+                            <NutritionalCard icon={CarbsIcon} text={`${user.infos.keyData.proteinCount}g`} subText={'Proteines'} />
+                            <NutritionalCard icon={LipidsIcon} text={`${user.infos.keyData.carbohydrateCount}g`} subText={'Glucides'} />
+                            <NutritionalCard icon={ProteinsIcon} text={`${user.infos.keyData.lipidCount}g`} subText={'Lipides'} />
                         </aside>
                     }
 

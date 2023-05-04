@@ -1,0 +1,27 @@
+.upper-nav {
+    background-color: $black;
+    color: $white;
+    display: flex;
+    gap: em-calc(350);
+    min-height: em-calc(105);
+    max-height: em-calc(105);
+    padding: em-calc(20) em-calc(90) em-calc(20) em-calc(30);
+}
+
+.upper-nav__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    & > li {
+
+        font-size: em-calc(24);
+        list-style: none;
+
+        & > a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}

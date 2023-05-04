@@ -1,7 +1,7 @@
 // Dependencies
 import React from "react";
 import { useEffect, useState } from 'react';
-import { PieChart, Pie, Cell, Tooltip } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 
 const UserScoreChart = ({ dataSource }) => {
 
@@ -20,13 +20,17 @@ const UserScoreChart = ({ dataSource }) => {
 
     return (
         scoreData?.length &&
-        <PieChart width={250} height={250}>
-            <Pie data={scoreData} dataKey="value" innerRadius={70} outerRadius={85} startAngle={90} endAngle={450}>
-                {scoreData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} cornerRadius={10} fill={entry.color} />
-                ))}
-            </Pie>
-        </PieChart>
+        <div className="dashboard-charts__score">
+            <ResponsiveContainer width="99%" aspect={1}>
+                <PieChart>
+                    <Pie data={scoreData} dataKey="value" innerRadius={85} outerRadius={100} startAngle={90} endAngle={450}>
+                        {scoreData.map((entry, index) => (
+                            <Cell key={`cell-${index}`} cornerRadius={10} fill={entry.color} />
+                        ))}
+                    </Pie>
+                </PieChart>
+            </ResponsiveContainer>
+        </div>
     )
 }
 

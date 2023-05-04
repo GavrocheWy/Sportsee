@@ -4,10 +4,12 @@ import DashboardContent from './DashboardContent'
 
 const Dashboard = () => {
     return (
-        <main>
-            <DashboardHeader />
-            <DashboardContent />
-        </main>
+        <div className='dashboard-wrapper'>
+            <main className='dashboard'>
+                <DashboardHeader />
+                <DashboardContent />
+            </main>
+        </div>
     )
 }
 

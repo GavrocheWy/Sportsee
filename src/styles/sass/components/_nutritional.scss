@@ -1,0 +1,32 @@
+.nutritional-cards {
+    display: flex;
+    flex-direction: column;
+    gap: em-calc(30);
+    width: calc(25% - em-calc(15));
+    height: 100%;
+}
+
+.nutritional-card {
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+    border-radius: em-calc(5);
+    gap: em-calc(30);
+    padding: em-calc(30);
+}
+
+.nutritional-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: em-calc(5);
+
+    &--number {
+        font-size: $medium-text-size;
+        font-weight: $strong-text-weight;
+    }
+
+    &--text {
+        font-size: $small-text-size;
+        opacity: 0.75;
+    }
+}

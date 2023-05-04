@@ -1,3 +1,5 @@
+// Styles
+import './styles/main.css';
 // Dependencies
 import React from 'react'
 import { Routes, Route } from "react-router-dom"

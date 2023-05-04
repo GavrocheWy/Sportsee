@@ -1,7 +1,11 @@
-const NutritionalCard = ({ text, subText }) => {
+const NutritionalCard = ({ icon, text, subText }) => {
     return (
-        <article>
-            <p>{text} | {subText}</p>
+        <article className="nutritional-card">
+            <img className="nutritional-card--image" src={icon} alt={subText} />
+            <div className="nutritional-card__content">
+                <p className="nutritional-card__content--number">{text}</p>
+                <p className="nutritional-card__content--text">{subText}</p>
+            </div>
         </article>
     )
 }

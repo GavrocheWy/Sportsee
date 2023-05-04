@@ -1,20 +1,23 @@
 // Variables de couleurs
 
 $white : white;
-$black : black;
+$black : #020203;
 
+$x-dark-grey: #282D30;
 $light-grey: #F6F6F6;
 $grey: #E3E3E3;
 
-$primary-color: #ff6060;
+$primary-color: #ff0101;
 
 // Polices de caractères
 
-$text-font: 'Montserrat', Arial, Helvetica, sans-serif;
+$text-font: 'Roboto', Arial, Helvetica, sans-serif;
 
 // Graisses des polices
 
+$strong-text-weight: 700;
 $reg-text-weight: 500;
+$light-text-weight: 400;
 
 // Tailles de caractères
 
@@ -24,6 +27,6 @@ $mobile-text-size : 15px;
 $normal-text-size : 1em;
 $x-large-text-size : em-calc(40);
 $large-text-size : em-calc(28);
-$medium-text-size : 1.1em;
-$small-text-size : em-calc(16);
-$x-small-text-size : em-calc(13);
+$medium-text-size : 1.2em;
+$small-text-size : 0.95em;
+$x-small-text-size : 0.75em;

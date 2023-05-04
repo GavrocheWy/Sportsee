@@ -1,3 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #282D30;
+}
+
+.app-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-nav {
+  background-color: #020203;
+  color: white;
+  display: flex;
+  gap: 19.4444444444em;
+  min-height: 5.8333333333em;
+  max-height: 5.8333333333em;
+  padding: 1.1111111111em 5em 1.1111111111em 1.6666666667em;
+}
+
+.upper-nav__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.upper-nav__navigation > li {
+  font-size: 1.3333333333em;
+  list-style: none;
+}
+.upper-nav__navigation > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.side-nav {
+  background-color: #020203;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 3.3333333333em 1.6666666667em;
+}
+
+.side-nav__copyright {
+  position: absolute;
+  bottom: 3.3333333333em;
+  white-space: nowrap;
+  left: 50%;
+  font-size: 0.75em;
+  transform-origin: 0%;
+  rotate: -90deg;
+}
+
+.side-nav__navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1111111111em;
+}
+.side-nav__navigation li {
+  background-color: white;
+  padding: 1.1111111111em;
+  border-radius: 0.5555555556em;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-nav__navigation li img {
+  width: 1.6666666667em;
+}
+
+.page-wrapper {
+  display: flex;
+  height: calc(100% - 5.8333333333em);
+}
+
+.nutritional-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6666666667em;
+  width: calc(25% - 0.8333333333em);
+  height: 100%;
+}
+
+.nutritional-card {
+  display: flex;
+  align-items: center;
+  background-color: #FBFBFB;
+  border-radius: 0.2777777778em;
+  gap: 1.6666666667em;
+  padding: 1.6666666667em;
+}
+
+.nutritional-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2777777778em;
+}
+.nutritional-card__content--number {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.nutritional-card__content--text {
+  font-size: 0.95em;
+  opacity: 0.75;
+}
+
+.dashboard-wrapper {
+  max-height: 100%;
+  overflow: auto;
+  flex: 1;
+}
+
+.dashboard {
+  padding: 3.8888888889em 5em;
+  max-width: 82.2222222222em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 3.3333333333em;
+}
+
+.dashboard-content {
+  display: flex;
+  align-items: stretch;
+  gap: 1.6666666667em;
+}
+
+.dashboard-charts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6666666667em;
+  width: calc(75% - 0.8333333333em);
+}
+.dashboard-charts > div {
+  background-color: #FBFBFB;
+  padding: 1.1111111111em;
+  border-radius: 0.2777777778em;
+}
+.dashboard-charts > div:not(:first-child) {
+  aspect-ratio: 1/1;
+}
+.dashboard-charts__activity {
+  grid-column: 1/4;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8333333333em;
+}
+.dashboard-header__title {
+  font-weight: 500;
+  font-size: 2.5em;
+}
+.dashboard-header__title-name {
+  color: #ff0101;
+}
+.dashboard-header__text {
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=main.css.map */

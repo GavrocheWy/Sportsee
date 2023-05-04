@@ -7,8 +7,10 @@ import HorizontalNav from '../Navigation/HorizontalNav'
 const Layout = () => {
     return (
         <React.Fragment>
-            <HorizontalNav />
-            <Outlet />
+            <div className='app-wrapper'>
+                <HorizontalNav />
+                <Outlet />
+            </div>
         </React.Fragment>
     )
 }

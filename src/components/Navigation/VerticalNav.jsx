@@ -6,14 +6,14 @@ import MusculationIcon from '../../assets/icons/icon-musculation.svg'
 
 const VerticalNav = () => {
     return (
-        <nav>
-            <ul>
+        <nav className='side-nav'>
+            <ul className='side-nav__navigation'>
                 <li><img src={MeditationIcon} alt="" /></li>
                 <li><img src={SwimmingIcon} alt="" /></li>
                 <li><img src={BikingIcon} alt="" /></li>
                 <li><img src={MusculationIcon} alt="" /></li>
             </ul>
-            <small>Copyright, SportSee 2023</small>
+            <small className='side-nav__copyright'>Copyright, SportSee 2023</small>
         </nav>
     )
 }

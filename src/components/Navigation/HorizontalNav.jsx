@@ -5,11 +5,11 @@ import SportseeLogo from '../../assets/logo/sportsee-logo.svg'
 
 const HorizontalNav = () => {
     return (
-        <nav>
+        <nav className='upper-nav'>
             <NavLink>
                 <img src={SportseeLogo} alt="logo de sportsee" />
             </NavLink>
-            <ul>
+            <ul className='upper-nav__navigation'>
                 <li><NavLink to='/'>Accueil</NavLink></li>
                 <li><NavLink to='/profil'>Profil</NavLink></li>
                 <li><NavLink to='/settings'>Réglages</NavLink></li>
