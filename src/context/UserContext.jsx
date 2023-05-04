@@ -31,7 +31,9 @@ export const UserProvider = ({ children }) => {
                 localStorage.setItem('userId', userId)
 
             } else {
+
                 console.log('Error append')
+
             }
         }
 
@@ -42,10 +44,6 @@ export const UserProvider = ({ children }) => {
         }
 
     }, [userId])
-
-    useEffect(() => {
-        user && console.log(user)
-    }, [user])
 
     return (
         <UserContext.Provider value={{ user, setUser, userId, setUserId }}>
