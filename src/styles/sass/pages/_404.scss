@@ -1,0 +1,25 @@
+.notfound__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - em-calc(105));
+
+    &--title {
+        font-size: 12em;
+        font-weight: 700;
+        color: $primary-color;
+        line-height: 0.8em;
+    }
+
+    &--text {
+        margin-top: em-calc(20);
+        font-weight: 400;
+    }
+
+    & > a {
+        margin-top: em-calc(5);
+        color: $primary-color;
+        font-weight: 400;
+    }
+}

@@ -88,6 +88,36 @@ body {
   height: calc(100% - 5.8333333333em);
 }
 
+.tooltip__activity {
+  background-color: #ff0101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.7777777778em;
+  font-size: 0.8em;
+  padding: 1.1111111111em 0.8333333333em;
+  color: white;
+  font-weight: 500;
+}
+
+.tooltip__average-session {
+  background-color: white;
+  font-size: 0.8em;
+  padding: 0.8333333333em 0.8333333333em;
+  color: #282D30;
+  font-weight: 500;
+  border: none;
+}
+.tooltip__average-session:focus {
+  outline: none;
+}
+.tooltip__average-session:focus-within {
+  outline: none;
+}
+.tooltip__average-session:focus-visible {
+  outline: none;
+}
+
 .nutritional-cards {
   display: flex;
   flex-direction: column;
@@ -117,6 +147,75 @@ body {
 .nutritional-card__content--text {
   font-size: 0.95em;
   opacity: 0.75;
+}
+
+.notfound__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 5.8333333333em);
+}
+.notfound__wrapper--title {
+  font-size: 12em;
+  font-weight: 700;
+  color: #ff0101;
+  line-height: 0.8em;
+}
+.notfound__wrapper--text {
+  margin-top: 1.1111111111em;
+  font-weight: 400;
+}
+.notfound__wrapper > a {
+  margin-top: 0.2777777778em;
+  color: #ff0101;
+  font-weight: 400;
+}
+
+.profil-selection__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+}
+
+.profil-selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.2222222222em;
+  background-color: #F6F6F6;
+  gap: 0.5555555556em;
+}
+.profil-selection > p {
+  font-weight: 400;
+  margin-bottom: 0.5555555556em;
+}
+
+.profil-selection__btn {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0.5555555556em;
+  cursor: pointer;
+  border: 0.1111111111em solid #ff0101;
+  background-color: #F6F6F6;
+  transform: scale(1);
+  transition: all 0.1s ease;
+}
+.profil-selection__btn:disabled {
+  opacity: 0.5;
+  order: 1000;
+}
+.profil-selection__btn:hover:not(:disabled) {
+  transform: scale(1.025);
+  transition: all 0.1s ease;
+}
+.profil-selection__btn span {
+  font-weight: 600;
 }
 
 .dashboard-wrapper {

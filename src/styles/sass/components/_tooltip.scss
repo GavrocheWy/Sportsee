@@ -1,0 +1,32 @@
+.tooltip__activity {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: em-calc(50);
+    font-size: 0.8em;
+    padding: em-calc(20) em-calc(15);
+    color: $white;
+    font-weight: 500;
+}
+
+.tooltip__average-session {
+    background-color: $white;
+    font-size: 0.8em;
+    padding: em-calc(15) em-calc(15);
+    color: $x-dark-grey;
+    font-weight: 500;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-within {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}

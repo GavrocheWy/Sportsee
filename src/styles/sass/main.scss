@@ -12,7 +12,10 @@
 @import './layouts/page';
 
 // Components
+@import './components/tooltip';
 @import './components/nutritional';
 
 // Pages
+@import './pages/404';
+@import './pages/profil';
 @import './pages/dashboard';
