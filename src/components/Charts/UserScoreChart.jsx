@@ -30,6 +30,13 @@ const UserScoreChart = ({ dataSource }) => {
                     </Pie>
                 </PieChart>
             </ResponsiveContainer>
+            <div className="dashboard-charts__text">
+                <p className="dashboard-charts__text--title">Score</p>
+                <p className="dashboard-charts__text--progression">
+                    <span>{scoreData[0].value * 100}%</span>
+                    <span>de votre objectif</span>
+                </p>
+            </div>
         </div>
     )
 }

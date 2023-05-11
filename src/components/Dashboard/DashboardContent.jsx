@@ -30,7 +30,7 @@ const DashboardContent = () => {
                     <div className='dashboard-charts'>
                         <UserActivityChart dataSource={user.activity.sessions} />
                         <UserAverageSessionChart dataSource={user.averageSession.sessions} />
-                        <UserPerformanceChart dataSource={user.performance.data} />
+                        <UserPerformanceChart dataSource={user.performance.data} kindSet={user.performance.kind} />
                         <UserScoreChart dataSource={user.infos.score} />
                     </div>
 
