@@ -18,8 +18,6 @@ const DashboardContent = () => {
 
     const { user } = useContext(UserContext)
 
-    console.log(user)
-
     return (
         <section className='dashboard-content'>
 
