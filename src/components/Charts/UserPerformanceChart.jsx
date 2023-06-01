@@ -5,6 +5,12 @@ import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer } fro
 import translateKindInFrench from './helpers/translateKindInFrench'
 import PropTypes from 'prop-types';
 
+/** Return the user performance chart defined by the performances of the user as data source and compared with the skills kind set
+ * @param  {array} dataSource
+ * @param  {object} kindSet
+ * @return {JSX}
+ */
+
 const UserPerformanceChart = ({ dataSource, kindSet }) => {
 
     const [formatedDataSource, setFormatedDataSource] = useState()

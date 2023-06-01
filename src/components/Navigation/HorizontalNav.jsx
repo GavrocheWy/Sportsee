@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom'
 // Assets
 import SportseeLogo from '../../assets/logo/sportsee-logo.svg'
 
+/** Display the horizontal navigation on the top
+ * @return {JSX}
+ */
+
 const HorizontalNav = () => {
     return (
         <nav className='upper-nav'>

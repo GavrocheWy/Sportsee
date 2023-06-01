@@ -1,3 +1,8 @@
+/** Translate skills kind into french
+ * @param  {string} kind
+ * @return {string}
+ */
+
 const translateKindInFrench = (kind) => {
     if (!kind) return "Élement non trouvé"
     switch (kind.toLowerCase()) {

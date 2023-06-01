@@ -4,6 +4,11 @@ import { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import PropTypes from 'prop-types';
 
+/** Return the user score chart defined by the score of the user as data source
+ * @param  {number} dataSource
+ * @return {JSX}
+ */
+
 const UserScoreChart = ({ dataSource }) => {
 
     const [scoreData, setScoreData] = useState([])

@@ -1,5 +1,11 @@
 import PropTypes from 'prop-types';
 
+/** Display a custom tooltip for the user activity chart
+ * @param  {bool} active
+ * @param  {array} payload
+ * @return {JSX}
+ */
+
 const UserActivityTooltip = ({ active, payload }) => {
     if (active) {
         return (

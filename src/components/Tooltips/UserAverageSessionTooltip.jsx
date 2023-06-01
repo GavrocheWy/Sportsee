@@ -1,5 +1,11 @@
 import PropTypes from 'prop-types';
 
+/** Display a custom tooltip for the user average session chart
+ * @param  {bool} active
+ * @param  {array} payload
+ * @return {JSX}
+ */
+
 const UserAverageSessionTooltip = ({active, payload}) => {
     if (active) {
         return (

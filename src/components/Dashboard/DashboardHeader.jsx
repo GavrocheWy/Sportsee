@@ -2,6 +2,10 @@
 import { useContext } from "react"
 import UserContext from '../../context/UserContext'
 
+/** Return the dashboard header with fixed texts
+ * @return {JSX}
+ */
+
 const DashboardHeader = () => {
 
     const { user } = useContext(UserContext)

@@ -4,6 +4,10 @@ import { Outlet } from 'react-router-dom'
 // Components
 import HorizontalNav from '../Navigation/HorizontalNav'
 
+/** Return the layout of the application
+ * @return {JSX}
+ */
+
 const Layout = () => {
     return (
         <React.Fragment>

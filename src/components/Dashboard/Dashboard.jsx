@@ -2,6 +2,10 @@
 import DashboardHeader from '../Dashboard/DashboardHeader'
 import DashboardContent from './DashboardContent'
 
+/** Return the dashboard in the home page
+ * @return {JSX}
+ */
+
 const Dashboard = () => {
     return (
         <div className='dashboard-wrapper'>

@@ -3,21 +3,34 @@ import { useContext } from "react"
 import UserContext from '../../context/UserContext'
 import { useNavigate } from "react-router-dom";
 
+/** Display a profil selection window where user can choose between differents profils
+ * @return {JSX}
+ */
+
 const ProfilSelection = () => {
 
     const navigate = useNavigate();
     const { userId, setUserId } = useContext(UserContext)
+
+    /** Set the user by an ID and navigate to the homepage
+     * @param {string} id
+     */
 
     const setUser = (id) => {
         setUserId(id)
         navigate('/')
     }
 
+    /** Get the user by an ID and return user name in a string
+     * @param {string} id
+     * @return {string}
+     */
+
     const getUserById = (id) => {
         switch (id) {
-            case '12' || 12:
+            case '12':
                 return 'Karl';
-            case '18' || 18:
+            case '18':
                 return 'Cecilia'
             default:
                 return ''

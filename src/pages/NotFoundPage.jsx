@@ -1,6 +1,10 @@
 // Dependencies
 import { Link } from 'react-router-dom'
 
+/** Display a not found page when user type a non-existent url
+ * @return {JSX}
+ */
+
 const NotFoundPage = () => {
     return (
         <div className="notfound__wrapper">

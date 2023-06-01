@@ -4,6 +4,10 @@ import SwimmingIcon from '../../assets/icons/icon-swimming.svg'
 import BikingIcon from '../../assets/icons/icon-biking.svg'
 import MusculationIcon from '../../assets/icons/icon-musculation.svg'
 
+/** Display the vertical navigation on the left. Currently not a real navigation
+ * @return {JSX}
+ */
+
 const VerticalNav = () => {
     return (
         <nav className='side-nav'>

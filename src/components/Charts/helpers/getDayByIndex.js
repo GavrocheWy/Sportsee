@@ -1,3 +1,8 @@
+/** Formate numbers into days first letter
+ * @param  {number} index
+ * @return {string}
+ */
+
 const getDayByIndex = (index) => {
     if (!index) return 0
     switch (index) {

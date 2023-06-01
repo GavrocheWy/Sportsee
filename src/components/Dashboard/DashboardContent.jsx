@@ -14,6 +14,10 @@ import CarbsIcon from '../../assets/icons/icon-carbs.svg'
 import LipidsIcon from '../../assets/icons/icon-lipids.svg'
 import ProteinsIcon from '../../assets/icons/icon-proteins.svg'
 
+/** Return the dashboard content with the charts and the nutritionnal infos by user context
+ * @return {JSX}
+ */
+
 const DashboardContent = () => {
 
     const { user } = useContext(UserContext)

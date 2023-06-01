@@ -2,10 +2,10 @@
 import axios from 'axios'
 
 /**
- * Get unique user infos (mocked)
+ * Get user informations (mocked)
  *
- * @param {string} id User id
- * @returns {object} Data
+ * @param {string} userId
+ * @returns {object}
  */
 
 export const GetMockedUserInfos = async (userId) => {
@@ -18,10 +18,10 @@ export const GetMockedUserInfos = async (userId) => {
 }
 
 /**
- * Get unique user activity (mocked)
+ * Get user activity (mocked)
  *
- * @param {string} id User id
- * @returns {object} Data
+ * @param {string} userId
+ * @returns {object}
  */
 
 export const GetMockedUserActivity = async (userId) => {
@@ -34,10 +34,10 @@ export const GetMockedUserActivity = async (userId) => {
 }
 
 /**
- * Get unique user average session (mocked)
+ * Get user average session (mocked)
  *
- * @param {string} id User id
- * @returns {object} Data
+ * @param {string} userId
+ * @returns {object}
  */
 
 export const GetMockedUserAverageSession = async (userId) => {
@@ -50,10 +50,10 @@ export const GetMockedUserAverageSession = async (userId) => {
 }
 
 /**
- * Get unique user performance (mocked)
+ * Get user performance (mocked)
  *
- * @param {string} id User id
- * @returns {object} Data
+ * @param {string} userId
+ * @returns {object}
  */
 
 export const GetMockedUserPerformance = async (userId) => {

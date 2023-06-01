@@ -8,6 +8,11 @@ import PropTypes from 'prop-types';
 import UserAverageSessionTooltip from '../Tooltips/UserAverageSessionTooltip'
 import UserAverageSessionDot from '../Indicators/UserAverageSessionDot'
 
+/** Return the user average session chart defined by the average sessions of the user as data source
+ * @param  {array} dataSource
+ * @return {JSX}
+ */
+
 const UserAverageSessionChart = ({ dataSource }) => {
 
     const [formatedDataSource, setFormatedDataSource] = useState()

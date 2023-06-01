@@ -1,5 +1,12 @@
 import PropTypes from 'prop-types';
 
+/** Display a card with nutritionnal infos and an icon
+ * @param  {string} icon
+ * @param  {string} text
+ * @param  {string} subText
+ * @return {JSX}
+ */
+
 const NutritionalCard = ({ icon, text, subText }) => {
     return (
         <article className="nutritional-card">

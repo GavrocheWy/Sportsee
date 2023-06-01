@@ -2,10 +2,10 @@
 import axios from 'axios'
 
 /**
- * Get unique user infos
+ * Get user informations
  *
- * @param {string} id User id
- * @returns {object} Data
+ * @param {string} userId
+ * @returns {object}
  */
 
 export const GetUserInfos = async (userId) => {
@@ -18,10 +18,10 @@ export const GetUserInfos = async (userId) => {
 }
 
 /**
- * Get unique user activity
+ * Get user activity
  *
- * @param {string} id User id
- * @returns {object} Data
+ * @param {string} userId
+ * @returns {object}
  */
 
 export const GetUserActivity = async (userId) => {
@@ -34,10 +34,10 @@ export const GetUserActivity = async (userId) => {
 }
 
 /**
- * Get unique user average session
+ * Get user average session
  *
- * @param {string} id User id
- * @returns {object} Data
+ * @param {string} userId
+ * @returns {object}
  */
 
 export const GetUserAverageSession = async (userId) => {
@@ -50,10 +50,10 @@ export const GetUserAverageSession = async (userId) => {
 }
 
 /**
- * Get unique user performance
+ * Get user performance
  *
- * @param {string} id User id
- * @returns {object} Data
+ * @param {string} userId
+ * @returns {object}
  */
 
 export const GetUserPerformance = async (userId) => {
