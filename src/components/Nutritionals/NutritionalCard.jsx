@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const NutritionalCard = ({ icon, text, subText }) => {
     return (
         <article className="nutritional-card">
@@ -11,3 +13,9 @@ const NutritionalCard = ({ icon, text, subText }) => {
 }
 
 export default NutritionalCard
+
+NutritionalCard.propTypes = {
+    icon: PropTypes.string,
+    text: PropTypes.string,
+    subText: PropTypes.string
+}

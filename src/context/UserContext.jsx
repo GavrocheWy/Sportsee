@@ -32,7 +32,7 @@ export const UserProvider = ({ children }) => {
 
             } else {
 
-                console.log('Error append')
+                console.log('An error append')
 
             }
         }

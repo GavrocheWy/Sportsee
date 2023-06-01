@@ -3,6 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react"
 import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer } from "recharts";
 import translateKindInFrench from './helpers/translateKindInFrench'
+import PropTypes from 'prop-types';
 
 const UserPerformanceChart = ({ dataSource, kindSet }) => {
 
@@ -33,3 +34,8 @@ const UserPerformanceChart = ({ dataSource, kindSet }) => {
 }
 
 export default UserPerformanceChart
+
+UserPerformanceChart.propTypes = {
+    dataSource: PropTypes.array,
+    kindSet: PropTypes.object
+}

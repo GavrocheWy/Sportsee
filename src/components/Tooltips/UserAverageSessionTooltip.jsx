@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const UserAverageSessionTooltip = ({active, payload}) => {
     if (active) {
         return (
@@ -11,3 +13,8 @@ const UserAverageSessionTooltip = ({active, payload}) => {
 }
 
 export default UserAverageSessionTooltip
+
+UserAverageSessionTooltip.propTypes = {
+    active: PropTypes.bool,
+    payload: PropTypes.array,
+}

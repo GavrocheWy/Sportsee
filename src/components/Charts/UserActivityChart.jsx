@@ -1,6 +1,7 @@
 // Dependencies
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { useEffect, useState } from "react"
+import PropTypes from 'prop-types';
 // Components
 import UserActivityTooltip from '../Tooltips/UserActivityTooltip'
 
@@ -44,3 +45,7 @@ const UserActivityChart = ({ dataSource }) => {
 }
 
 export default UserActivityChart
+
+UserActivityChart.propTypes = {
+    dataSource: PropTypes.array,
+}

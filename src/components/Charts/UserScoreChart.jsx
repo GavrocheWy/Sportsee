@@ -1,7 +1,8 @@
 // Dependencies
 import React from "react";
 import { useEffect, useState } from 'react';
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+import PropTypes from 'prop-types';
 
 const UserScoreChart = ({ dataSource }) => {
 
@@ -42,3 +43,7 @@ const UserScoreChart = ({ dataSource }) => {
 }
 
 export default UserScoreChart
+
+UserScoreChart.propTypes = {
+    dataSource: PropTypes.number
+}

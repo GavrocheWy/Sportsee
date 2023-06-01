@@ -1,4 +1,6 @@
-const UserActivityTooltip = ({active, payload}) => {
+import PropTypes from 'prop-types';
+
+const UserActivityTooltip = ({ active, payload }) => {
     if (active) {
         return (
             <div className="tooltip__activity">
@@ -12,3 +14,8 @@ const UserActivityTooltip = ({active, payload}) => {
 }
 
 export default UserActivityTooltip
+
+UserActivityTooltip.propTypes = {
+    active: PropTypes.bool,
+    payload: PropTypes.array,
+}

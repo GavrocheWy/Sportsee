@@ -3,6 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceArea } from "recharts";
 import getDayByIndex from './helpers/getDayByIndex'
+import PropTypes from 'prop-types';
 // Components
 import UserAverageSessionTooltip from '../Tooltips/UserAverageSessionTooltip'
 import UserAverageSessionDot from '../Indicators/UserAverageSessionDot'
@@ -17,8 +18,6 @@ const UserAverageSessionChart = ({ dataSource }) => {
 
         const firstData = datas[0]
         const followingData = datas[1]
-
-        console.log(datas)
 
         if (firstData && followingData) {
             let newDataSessionLength = firstData.sessionLength
@@ -41,9 +40,6 @@ const UserAverageSessionChart = ({ dataSource }) => {
 
         const lastData = datas[datas.length - 1]
         const previousData = datas[datas.length - 2]
-
-        console.log('LAST :', lastData)
-        console.log('PREV :', previousData)
 
         if (lastData && previousData) {
             let newDataSessionLength = lastData.sessionLength
@@ -97,3 +93,7 @@ const UserAverageSessionChart = ({ dataSource }) => {
 }
 
 export default UserAverageSessionChart
+
+UserAverageSessionChart.propTypes = {
+    dataSource: PropTypes.array,
+}

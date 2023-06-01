@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const UserAverageSessionDot = ({cx, cy}) => {
     return (
         <circle cx={cx} cy={cy} r={5} stroke="rgba(255, 255, 255, 0.25)" strokeWidth={15} fill="white" />
@@ -5,3 +7,8 @@ const UserAverageSessionDot = ({cx, cy}) => {
 }
 
 export default UserAverageSessionDot
+
+UserAverageSessionDot.propTypes = {
+    cx: PropTypes.number,
+    cy: PropTypes.number,
+}
