@@ -3,15 +3,14 @@ import axios from 'axios'
 
 /**
  * Get user informations (mocked)
- *
  * @param {string} userId
  * @returns {object}
  */
 
 export const GetMockedUserInfos = async (userId) => {
     try {
-        const res = await axios.get(`http://localhost:3000/user/${userId}`);
-        return res.data;
+        const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/infos.json`);
+        return res.data.data;
     } catch (e) {
         console.log(e);
     }
@@ -19,7 +18,6 @@ export const GetMockedUserInfos = async (userId) => {
 
 /**
  * Get user activity (mocked)
- *
  * @param {string} userId
  * @returns {object}
  */
@@ -27,7 +25,7 @@ export const GetMockedUserInfos = async (userId) => {
 export const GetMockedUserActivity = async (userId) => {
     try {
         const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/activity.json`);
-        return res.data;
+        return res.data.data;
     } catch (e) {
         console.log(e);
     }
@@ -35,15 +33,14 @@ export const GetMockedUserActivity = async (userId) => {
 
 /**
  * Get user average session (mocked)
- *
  * @param {string} userId
  * @returns {object}
  */
 
 export const GetMockedUserAverageSession = async (userId) => {
     try {
-        const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/average-sessions.json`);
-        return res.data;
+        const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/averageSessions.json`);
+        return res.data.data;
     } catch (e) {
         console.log(e);
     }
@@ -51,7 +48,6 @@ export const GetMockedUserAverageSession = async (userId) => {
 
 /**
  * Get user performance (mocked)
- *
  * @param {string} userId
  * @returns {object}
  */
@@ -59,7 +55,7 @@ export const GetMockedUserAverageSession = async (userId) => {
 export const GetMockedUserPerformance = async (userId) => {
     try {
         const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/performance.json`);
-        return res.data;
+        return res.data.data;
     } catch (e) {
         console.log(e);
     }
