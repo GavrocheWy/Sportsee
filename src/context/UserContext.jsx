@@ -13,6 +13,10 @@ export const UserProvider = ({ children }) => {
     const [user, setUser] = useState()
     const [serverIsOn, setServerIsOn] = useState(undefined)
 
+    /** Set "serverIsOn" value to true when the server request is valid, used to test the server before loading
+    * @return {Boolean}
+    */
+
     const checkIfServerIsOn = async (userId) => {
         if (userId) {
             try {
