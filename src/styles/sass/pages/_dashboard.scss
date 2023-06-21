@@ -11,6 +11,11 @@
     flex-direction: column;
     margin: 0 auto;
     gap: em-calc(60);
+
+    @include at-least-pc-small {
+        padding: em-calc(35) em-calc(45);
+        gap: em-calc(30);
+    }
 }
 
 .dashboard-content {
@@ -25,6 +30,10 @@
     gap: em-calc(30);
     width: calc(75% - em-calc(15));
 
+    @include at-least-pc-small {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     & > div {
         // padding: em-calc(20);
         border-radius: em-calc(5);
@@ -36,6 +45,10 @@
 
     &__activity {
         grid-column: 1 / 4;
+
+        @include at-least-pc-small {
+            grid-column: 1 / 3;
+        }
     }
 }
 

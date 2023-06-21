@@ -1,0 +1,13 @@
+// LISTE DES BREAKPOINTS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$breakpoints: (
+  pc-small: 1300px,
+);
+
+// MIXINS DES BREAKPOINTS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@mixin at-least-pc-small {
+    @media screen and (max-width: map-get($breakpoints, pc-small)) {
+        @content;
+    }
+}

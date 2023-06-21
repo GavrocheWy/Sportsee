@@ -1,6 +1,7 @@
 .dashboard-charts__activity {
     &-head {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         margin-bottom: em-calc(15);
 
@@ -63,8 +64,8 @@
 .dashboard-charts__text--title {
     position: absolute;
     max-width: 60%;
-    top: em-calc(30);
-    left: em-calc(30);
+    top: 5%;
+    left: 5%;
     font-size: 0.9em;
 }
 

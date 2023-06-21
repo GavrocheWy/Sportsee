@@ -3,9 +3,13 @@
     color: $white;
     display: flex;
     gap: em-calc(350);
-    min-height: em-calc(105);
     max-height: em-calc(105);
     padding: em-calc(20) em-calc(90) em-calc(20) em-calc(30);
+
+    @include at-least-pc-small {
+        padding: em-calc(20) em-calc(30) em-calc(20) em-calc(30);
+        gap: em-calc(20);
+    }
 }
 
 .upper-nav__navigation {
@@ -13,6 +17,13 @@
     justify-content: space-between;
     align-items: center;
     flex: 1;
+
+    @include at-least-pc-small {
+        margin-left: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+        gap: em-calc(40);
+    }
 
     & > li {
 

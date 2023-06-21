@@ -6,6 +6,10 @@
     flex-direction: column;
     position: relative;
     padding: em-calc(60) em-calc(30);
+
+    @include at-least-pc-small {
+        justify-content: flex-start;
+    }
 }
 
 .side-nav__copyright {

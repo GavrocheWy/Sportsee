@@ -25,9 +25,14 @@ body {
   color: white;
   display: flex;
   gap: 19.4444444444em;
-  min-height: 5.8333333333em;
   max-height: 5.8333333333em;
   padding: 1.1111111111em 5em 1.1111111111em 1.6666666667em;
+}
+@media screen and (max-width: 1300px) {
+  .upper-nav {
+    padding: 1.1111111111em 1.6666666667em 1.1111111111em 1.6666666667em;
+    gap: 1.1111111111em;
+  }
 }
 
 .upper-nav__navigation {
@@ -35,6 +40,14 @@ body {
   justify-content: space-between;
   align-items: center;
   flex: 1;
+}
+@media screen and (max-width: 1300px) {
+  .upper-nav__navigation {
+    margin-left: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 2.2222222222em;
+  }
 }
 .upper-nav__navigation > li {
   font-size: 1.3333333333em;
@@ -53,6 +66,11 @@ body {
   flex-direction: column;
   position: relative;
   padding: 3.3333333333em 1.6666666667em;
+}
+@media screen and (max-width: 1300px) {
+  .side-nav {
+    justify-content: flex-start;
+  }
 }
 
 .side-nav__copyright {
@@ -121,6 +139,7 @@ body {
 
 .dashboard-charts__activity-head {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 0.8333333333em;
 }
@@ -175,8 +194,8 @@ body {
 .dashboard-charts__text--title {
   position: absolute;
   max-width: 60%;
-  top: 1.6666666667em;
-  left: 1.6666666667em;
+  top: 5%;
+  left: 5%;
   font-size: 0.9em;
 }
 
@@ -217,6 +236,11 @@ body {
   width: calc(25% - 0.8333333333em);
   height: 100%;
 }
+@media screen and (max-width: 1300px) {
+  .nutritional-cards {
+    gap: 0.8333333333em;
+  }
+}
 
 .nutritional-card {
   display: flex;
@@ -225,6 +249,12 @@ body {
   border-radius: 0.2777777778em;
   gap: 1.6666666667em;
   padding: 1.6666666667em;
+}
+@media screen and (max-width: 1300px) {
+  .nutritional-card {
+    gap: 0.8333333333em;
+    padding: 0.8333333333em;
+  }
 }
 
 .nutritional-card__content {
@@ -324,6 +354,12 @@ body {
   margin: 0 auto;
   gap: 3.3333333333em;
 }
+@media screen and (max-width: 1300px) {
+  .dashboard {
+    padding: 1.9444444444em 2.5em;
+    gap: 1.6666666667em;
+  }
+}
 
 .dashboard-content {
   display: flex;
@@ -337,6 +373,11 @@ body {
   gap: 1.6666666667em;
   width: calc(75% - 0.8333333333em);
 }
+@media screen and (max-width: 1300px) {
+  .dashboard-charts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .dashboard-charts > div {
   border-radius: 0.2777777778em;
 }
@@ -345,6 +386,11 @@ body {
 }
 .dashboard-charts__activity {
   grid-column: 1/4;
+}
+@media screen and (max-width: 1300px) {
+  .dashboard-charts__activity {
+    grid-column: 1/3;
+  }
 }
 
 .dashboard-header {

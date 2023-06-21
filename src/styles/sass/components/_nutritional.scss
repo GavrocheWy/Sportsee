@@ -4,6 +4,10 @@
     gap: em-calc(30);
     width: calc(25% - em-calc(15));
     height: 100%;
+
+    @include at-least-pc-small {
+        gap: em-calc(15);
+    }
 }
 
 .nutritional-card {
@@ -13,6 +17,11 @@
     border-radius: em-calc(5);
     gap: em-calc(30);
     padding: em-calc(30);
+
+    @include at-least-pc-small {
+        gap: em-calc(15);
+        padding: em-calc(15);
+    }
 }
 
 .nutritional-card__content {
