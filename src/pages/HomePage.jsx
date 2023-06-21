@@ -1,34 +1,20 @@
 // Dependencies
 import React from 'react'
-import { useContext } from 'react'
-import UserContext from '../context/UserContext'
-import { Navigate } from "react-router-dom";
 // Components
 import VerticalNav from '../components/Navigation/VerticalNav'
-import Dashboard from '../components/Dashboard/Dashboard'
+import ProfilSelection from '../components/Profil/ProfilSelection'
 
-/** Display the home page where user can find charts and datas. If there is no profil selected, the user is sent to the profil page
+/** Display a home page where user can select his profil
  * @return {JSX}
  */
 
 const HomePage = () => {
-
-    const { userId } = useContext(UserContext)
-
-    if (userId) {
-        return (
-            <div className='page-wrapper'>
-                <VerticalNav />
-                <Dashboard />
-            </div>
-        )
-    } else {
-        return (
-            <Navigate to="/profil"/>
-        )
-    }
-
-
+    return (
+        <div className='page-wrapper'>
+            <VerticalNav/>
+            <ProfilSelection />
+        </div>
+    )
 }
 
 export default HomePage

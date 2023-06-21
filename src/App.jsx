@@ -10,19 +10,22 @@ import HomePage from "./pages/HomePage";
 import ProfilPage from "./pages/ProfilPage";
 import NotFoundPage from './pages/NotFoundPage'
 import { UserProvider } from './context/UserContext';
+import { ErrorProvider } from './context/ErrorContext';
 
 function App() {
   return (
     <React.Fragment>
-      <UserProvider>
-        <Routes>
-          <Route path="/" element={<Layout />} >/
-            <Route path="/" element={<HomePage />} />
-            <Route path="/profil" element={<ProfilPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Route>
-        </Routes>
-      </UserProvider>
+      <ErrorProvider>
+        <UserProvider>
+          <Routes>
+            <Route path="/" element={<Layout />} >/
+              <Route path="/" element={<HomePage />} />
+              <Route path="/profil" element={<ProfilPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
+          </Routes>
+        </UserProvider>
+      </ErrorProvider>
     </React.Fragment>
   );
 }

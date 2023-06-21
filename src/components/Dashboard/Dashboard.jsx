@@ -5,6 +5,7 @@ import DashboardContent from './DashboardContent'
 import { useContext } from 'react'
 import UserContext from '../../context/UserContext'
 import React from 'react'
+import ErrorContext from '../../context/ErrorContext'
 
 
 /** Return the dashboard in the home page
@@ -14,6 +15,7 @@ import React from 'react'
 const Dashboard = () => {
 
     const { user } = useContext(UserContext)
+    const { error } = useContext(ErrorContext)
 
     return (
         <div className='dashboard-wrapper'>
@@ -23,7 +25,7 @@ const Dashboard = () => {
                         <DashboardHeader />
                         <DashboardContent />
                     </React.Fragment>
-                    : <p>Chargement des informations...</p>
+                    : <p>{error ? error : "Chargement des informations..."}</p>
                 }
             </main>
         </div>

@@ -9,10 +9,10 @@ import axios from 'axios'
 
 export const GetUserInfos = async (userId) => {
 	try {
-		const res = await axios.get(`http://localhost:3100/user/${userId}`);
+		const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/${userId}`);
 		return res.data.data;
 	} catch (err) {
-		console.log(err)
+		return;
 	}
 }
 
@@ -24,10 +24,10 @@ export const GetUserInfos = async (userId) => {
 
 export const GetUserActivity = async (userId) => {
 	try {
-		const res = await axios.get(`http://localhost:3100/user/${userId}/activity`);
+		const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/${userId}/activity`);
 		return res.data.data;
 	} catch (err) {
-		console.log(err)
+		return;
 	}
 }
 
@@ -39,10 +39,10 @@ export const GetUserActivity = async (userId) => {
 
 export const GetUserAverageSession = async (userId) => {
 	try {
-		const res = await axios.get(`http://localhost:3100/user/${userId}/average-sessions`);
+		const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/${userId}/average-sessions`);
 		return res.data.data;
 	} catch (err) {
-		console.log(err)
+		return;
 	}
 }
 
@@ -54,9 +54,9 @@ export const GetUserAverageSession = async (userId) => {
 
 export const GetUserPerformance = async (userId) => {
 	try {
-		const res = await axios.get(`http://localhost:3100/user/${userId}/performance`);
+		const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/${userId}/performance`);
 		return res.data.data;
 	} catch (err) {
-		console.log(err)
+		return;
 	}
 }

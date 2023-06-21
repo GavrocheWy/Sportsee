@@ -9,7 +9,7 @@ import axios from 'axios'
 
 export const GetMockedUserInfos = async (userId) => {
     try {
-        const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/infos.json`);
+        const res = await axios.get(`${process.env.REACT_APP_LOCAL_URL}/mockedData/users/${userId}/infos.json`);
         return res.data.data;
     } catch (e) {
         console.log(e);
@@ -24,7 +24,7 @@ export const GetMockedUserInfos = async (userId) => {
 
 export const GetMockedUserActivity = async (userId) => {
     try {
-        const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/activity.json`);
+        const res = await axios.get(`${process.env.REACT_APP_LOCAL_URL}/mockedData/users/${userId}/activity.json`);
         return res.data.data;
     } catch (e) {
         console.log(e);
@@ -39,7 +39,7 @@ export const GetMockedUserActivity = async (userId) => {
 
 export const GetMockedUserAverageSession = async (userId) => {
     try {
-        const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/averageSessions.json`);
+        const res = await axios.get(`${process.env.REACT_APP_LOCAL_URL}/mockedData/users/${userId}/averageSessions.json`);
         return res.data.data;
     } catch (e) {
         console.log(e);
@@ -54,7 +54,7 @@ export const GetMockedUserAverageSession = async (userId) => {
 
 export const GetMockedUserPerformance = async (userId) => {
     try {
-        const res = await axios.get(`http://localhost:3000/mockedData/users/${userId}/performance.json`);
+        const res = await axios.get(`${process.env.REACT_APP_LOCAL_URL}/mockedData/users/${userId}/performance.json`);
         return res.data.data;
     } catch (e) {
         console.log(e);
